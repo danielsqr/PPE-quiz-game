@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./game.css">
+    <title>Corinthians Quiz</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Corinthians Quiz</h1>
+        <div class="Corinthians">
+          <img src = "data:image/png;base64,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">
+      </div>
+         <h2>Selecione a opção que você acha correta:</h2>        
+ 
+    <div class="perguntas">
+       
+        <label class="num" id="num1">Número 1</label>
+        <br><br>
+        <label class="quest">Qual o nome completo do time?</label>
+        <br><br>
+        <select id="q1">
+            <option value="opção 1">Sport Clube Corinthians Paulista</option> 
+            <option value="opção 2">Corinthians spot clube</option>
+            <option value="opção 3">corinthians cuble sporte</option>
+        </select>
+        <br><br>
+        <label class="num">Número 2</label>
+        <br><br>
+        <label class="quest">O Estádio de origem time é:</label>
+        <br><br>
+        <select id="q2">
+            <option value="opção 1">Estádio morumbi</option>
+            <option value="opção 2">estádio Neo quimíca arena</option>
+            <option value="opção 3">Estádio maranã</option>
+        </select>
+        <br><br>
+        <label class="num">Número 3</label>
+        <br><br>
+        <label class="quest">Qual o nome do técnico atual do Corinthians?</label>
+        <br><br>
+        <select id="q3">
+            <option value="opção 1">Vitor pereira</option>
+            <option value="opção 2">Abel ferreira</option>
+            <option value="opção 3">Rogério ceni</option>
+        </select>
+        <br><br>
+        <label class="num">Número 4</label>
+        <br><br>
+        <label class="quest">Qual o nome do presidente atual?</label>
+        <br><br>
+        <select id="q4">
+            <option value="opção 1">Duílio Monteiro Alves</option>
+            <option value="opção 2">Jorge Salgado</option>
+            <option value="opção 3">José Ricardo Mannarino</option>
+        </select>
+        <br><br>
+        <label class="num">Número 5</label>
+        <br><br>
+        <label class="quest">Qual o ranking nacional?</label>
+        <br><br>
+        <select id="q5">
+            <option value="opção 1">2° colocado</option>
+            <option value="opção 2">10° colocado</option>
+            <option value="opção 3">5° colocado</option>
+        </select>
+        <br><br>
+        <label class="num">Número 6</label>
+        <br><br>
+        <label class="quest">Qual o nome do mascote?</label>
+        <br><br>
+        <select id="q6">
+            <option value="opção 1">saci</option>
+            <option value="opção 2">Mosqueteiro</option>
+            <option value="opção 3">Urubu</option> 
+        </select>
+        <br><br>
+        <label class="num">Número 7</label>
+        <br><br>
+        <label class="quest">Qual desses títulos são do Corintians?</label>
+        <br><br>
+        <select id="q7">
+            <option value="opção 1">mundial de clubes 2012</option>
+            <option value="opção 2">Copas do Brasil de 2007</option>
+            <option value="opção 3">Paulistão de 2022</option> 
+        </select>
+        <br><br>
+        <label class="num">Número 8</label>
+        <br><br>
+        <label class="quest">Qual o nome do atacante do Corinthians?</label>
+        <br><br>
+        <select id="q8">
+            <option value="opção 1">Roger guedes</option>
+            <option value="opção 2">Dudu</option>
+            <option value="opção 3">Marcos leonardo</option> 
+        </select>
+        <br><br>
+        <label class="num">Número 9</label>
+        <br><br>
+        <label class="quest">Onde é localizada a sede do time?</label>
+        <br><br>
+        <select id="q9">
+            <option value="opção 1">Santa Catarina</option>
+            <option value="opção 2">Curitiba</option>
+            <option value="opção 3">São Paulo</option>
+        </select>
+        <br><br>
+        <label class="num">Número 10</label>
+        <br><br>
+        <label class="quest">Quando foi fundado?</label>
+        <br><br>
+        <select id="q10">
+            <option value="opção 1">1 de setembro de 1910</option>
+            <option value="opção 2">20 de agosto  de 1887</option>
+            <option value="opção 3">10 de abril de 1875</option>
+        </select>
+        <label class="num" id="num1">Número 11</label>
+        <br><br>
+        <label class="quest">Quantos títulos internacionas o Corinthians tem?</label>
+        <br><br>
+        <select id="q11">
+            <option value="opção 1">4 títulos</option> 
+            <option value="opção 2">6 títulos</option>
+            <option value="opção 3">3 títulos</option>
+        </select>
+        <br><br>
+        <label class="num">Número 12</label>
+        <br><br>
+        <label class="quest">qual jogador tem mais jogos pelo time?</label>
+        <br><br>
+        <select id="q12">
+            <option value="opção 1">fagner</option>
+            <option value="opção 2">Cássio Ramos</option>
+            <option value="opção 3">lucas piton</option>
+        </select>
+        <br><br>
+        <label class="num">Número 13</label>
+        <br><br>
+        <label class="quest">qual jogador tem mais gols pelo clube?</label>
+        <br><br>
+        <select id="q13">
+            <option value="opção 1">Rafael Ramos</option>
+            <option value="opção 2">jô</option>
+            <option value="opção 3">Claudio</option>
+        </select>
+        <br><br>
+        <label class="num">Número 14</label>
+        <br><br>
+        <label class="quest">capitão do time</label>
+        <br><br>
+        <select id="q14">
+            <option value="opção 1">Roger guedes</option>
+            <option value="opção 2">Fagner</option>
+            <option value="opção 3">Cassio Ramos</option>
+        </select>
+        <br><br>
+        <label class="num">Número 15</label>
+        <br><br>
+        <label class="quest">quando o time foi rebaixado?</label>
+        <br><br>
+        <select id="q15">
+            <option value="opção 1">2007</option>
+            <option value="opção 2">2000</option>
+            <option value="opção 3">2005</option>
+        </select>
+        <br><br>
+        <label class="num">Número 16</label>
+        <br><br>
+        <label class="quest">quantas torcidas organizda tem o Corinthians?</label>
+        <br><br>
+        <select id="q16">
+            <option value="opção 1">3 torcidas</option>
+            <option value="opção 2">6 torcidas</option>
+            <option value="opção 3">9 torcidas</option> 
+        </select>
+        <br><br>
+        <label class="num">Número 17</label>
+        <br><br>
+        <label class="quest">quantos títulos estadual tem o time?</label>
+        <br><br>
+        <select id="q17">
+            <option value="opção 1">30 títulod</option>
+            <option value="opção 2">26 títulos</option>
+            <option value="opção 3">32 títulos</option> 
+        </select>
+        <br><br>
+        <label class="num">Número 18</label>
+        <br><br>
+        <label class="quest">quantas copa do brasil tem o time?</label>
+        <br><br>
+        <select id="q18">
+            <option value="opção 1">4 títulos</option>
+            <option value="opção 2">2 títulos</option>
+            <option value="opção 3">3 títulos</option> 
+        </select>
+        <br><br>
+        <label class="num">Número 19</label>
+        <br><br>
+        <label class="quest">quantos campeonatos brasileiro tem o time?</label>
+        <br><br>
+        <select id="q19">
+            <option value="opção 1">5 títulos</option>
+            <option value="opção 2">7 títulos</option>
+            <option value="opção 3">3 títulos</option>
+        </select>
+        <br><br>
+        <label class="num">Número 20</label>
+        <br><br>
+        <label class="quest">quantas libertadores tem o time?</label>
+        <br><br>
+        <select id="q20">
+            <option value="opção 1">1 título</option>
+            <option value="opção 2">2 títulos</option>
+            <option value="opção 3">4 títulos</option>
+        </select>
+        
+    </div>
+    <div class="container">
+        <button class="btn" id="enviar" onclick="enviar()">Enviar</button>
+        <p>Pontuação</p>
+       <p class="pontuacao" id="pontuacao"></p>
+    </div>
+    </div>
+</div>
+    <script src="./game.js"></script>    
+</body>
+</html>
